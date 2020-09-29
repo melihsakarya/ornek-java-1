@@ -47,5 +47,27 @@ public class SinifVeNesne {
 
         System.out.println(o1.ad + " " + o1.soyad + " " + o1.yas);
         System.out.println(o1.okulu.ad + " " + o1.okulu.adres + " " + o1.okulu.ogrenciSayisi);
+
+        System.out.println(o1);
+    }
+
+    @Test
+    public void toplamaOrnek(){
+        int sonuc1 = topla(2, 4);
+        System.out.println(sonuc1);
+
+        int sonuc2 = topla(4, 6);
+        System.out.println(sonuc2);
+
+        System.out.println(topla(2, 8));
+
+        System.out.println(topla(-2, 8));
+    }
+
+    int topla(int x, int y){
+        if(x < 0){
+            x = 0;
+        }
+        return x + y;
     }
 }
